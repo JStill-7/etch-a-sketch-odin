@@ -6,25 +6,41 @@
 
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid rebeccapurple;
     height: 100vh;
 }
 
-#container {
+#newGrid {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    width:650px;
-    
+    margin: 28px;
+    padding: 8px;
+    font-size: 20px;
 }
 
-#gridSquares {
+
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 600px;   
+    height: 600px;  
+    outline: 2px solid black; 
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+.grid-square {
+    box-sizing: border-box;
     border: 1.5px solid blue;
     height: 40px;
     width: 40px;
+    
+}
+
+
+.change {
+    background-color: black;
 }
